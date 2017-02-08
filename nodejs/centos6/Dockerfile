@@ -9,7 +9,8 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
-RUN yum -y install nodejs npm; yum clean all
+RUN yum -y install nodejs; yum clean all
+RUN yum -y install npm; yum clean all
 
 ADD . /src
 
